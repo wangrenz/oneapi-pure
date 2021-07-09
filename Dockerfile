@@ -12,7 +12,9 @@ RUN wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCT
     rm GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB && \
     echo "deb https://apt.repos.intel.com/oneapi all main" > /etc/apt/sources.list.d/oneAPI.list && \
     echo "source /opt/intel/oneapi/setvars.sh -i_mpi_library_kind=release_mt" >> /etc/profile.d/intel.sh && \
-    chmod a+x /etc/profile.d/intel.sh
+    chmod a+x /etc/profile.d/intel.sh && \
+    echo "source /etc/bash.bashrc >> ~/.bashrc" && \
+    echo "source /etc/profile" >> ~/.bashrc
 
 RUN apt-get update -y && \
     apt-get install -y intel-oneapi-compiler-dpcpp-cpp-and-cpp-classic intel-oneapi-compiler-fortran intel-oneapi-mpi-devel && \
