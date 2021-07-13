@@ -34,4 +34,3 @@ ENV LD_LIBRARY_PATH=/opt/intel/oneapi/mpi/2021.3.0//libfabric/lib:/opt/intel/one
 ENV MANPATH=/opt/intel/oneapi/mpi/2021.3.0/man:/opt/intel/oneapi/compiler/2021.3.0/documentation/en/man/common
 ENV ONEAPI_ROOT=/opt/intel/oneapi
 ENV PATH=/opt/intel/oneapi/mpi/2021.3.0//libfabric/bin:/opt/intel/oneapi/mpi/2021.3.0//bin:/opt/intel/oneapi/mkl/2021.3.0/bin/intel64:/opt/intel/oneapi/compiler/2021.3.0/linux/bin/intel64:/opt/intel/oneapi/compiler/2021.3.0/linux/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-ENV PATH=/opt/intel/oneapi/mpi/2021.3.0//libfabric/bin:/opt/intel/oneapi/mpi/2021.3.0//bin:/opt/intel/oneapi/mkl/2021.3.0/bin/intel64:/opt/intel/oneapi/compiler/2021.3.0/linux/bin/intel64:/opt/intel/oneapi/compiler/2021.3.0/linux/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
