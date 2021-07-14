@@ -18,13 +18,11 @@ RUN apt-get update -y && \
     apt-get install -y intel-oneapi-compiler-dpcpp-cpp-and-cpp-classic intel-oneapi-compiler-fortran intel-oneapi-mpi-devel && \
     cd /opt/intel/oneapi && rm -rf tbb conda_channel debugger dev-utilities && \
     rm -rf compiler/2021.3.0/linux/lib/oclfpga && \
-    rm -f  compiler/2021.3.0/linux/compiler/lib/intel64_lin/*.a && \
     rm -f  compiler/2021.3.0/linux/lib/x64/libcommon_clang.so.2021.12.6.0 && \
     rm -rf compiler/2021.3.0/linux/lib/emu && \
     rm -f  compiler/2021.3.0/linux/bin/clang && \
     rm -f  compiler/2021.3.0/linux/bin/clang++ && \
     cd     compiler/2021.3.0/linux/bin && ls |grep -v intel64 |xargs rm -f && \
-    rm -f /opt/intel/oneapi/mpi/2021.3.0/lib/release/*.a /opt/intel/oneapi/mpi/2021.3.0/lib/release_mt/*.a && \
     rm -rf /var/lib/apt/lists/*
 
 ENV CPATH=/opt/intel/oneapi/mpi/2021.3.0//include:/opt/intel/oneapi/mkl/2021.3.0/include:/opt/intel/oneapi/compiler/2021.3.0/linux/include
