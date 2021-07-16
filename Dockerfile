@@ -4,7 +4,7 @@ FROM ubuntu:20.04
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Shanghai
 RUN apt-get update -y && \
-    apt-get install -y vim openssh-client tcsh gnupg2 wget lftp autoconf automake pkg-config gcc gfortran g++ unzip bzip2 tar make cmake curl iproute2 ping && \
+    apt-get install -y vim openssh-client tcsh gnupg2 wget lftp autoconf automake pkg-config gcc gfortran g++ unzip bzip2 tar make cmake curl iproute2 iputils-ping && \
     rm -rf /var/lib/apt/lists/*
     
 RUN wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB && \
