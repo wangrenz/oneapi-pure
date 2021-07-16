@@ -11,13 +11,14 @@ docker pull wangrzqi/oneapi-pure:latest
 
 2. Build yourself:
 ```
+curl -O https://raw.githubusercontent.com/wangrenz/oneapi-pure/main/Dockerfile
 docker build -t oneapi-pure:0.1 .
 ```
 3. Run：
 ```
 docker run -itd oneapi-pure:0.1 bash
 ```
-If run MPI code, need increase share memory size, as follow:
+If run MPI code, need increase share memory size, as follow command:
 ```
 docker run -it  --shm-size=50gb --cap-add=sys_nice --security-opt seccomp=unconfined  wangrzqi/oneapi-pure bash
 ```
