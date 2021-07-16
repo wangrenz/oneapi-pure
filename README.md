@@ -20,7 +20,7 @@ docker run -itd oneapi-pure:0.1 bash
 ```
 If run MPI code, need increase share memory size, as follow command:
 ```
-docker run -it  --shm-size=50gb --cap-add=sys_nice --security-opt seccomp=unconfined  wangrzqi/oneapi-pure bash
+docker run -it  --shm-size=50gb  wangrzqi/oneapi-pure bash
 ```
 Result:
 ```
