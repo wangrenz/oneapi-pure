@@ -28,6 +28,7 @@ RUN apt-get update -y && \
 ENV CPATH=/opt/intel/oneapi/mpi/2021.3.0//include:/opt/intel/oneapi/mkl/2021.3.0/include:/opt/intel/oneapi/compiler/2021.3.0/linux/include
 ENV INTEL_LICENSE_FILE=/opt/intel/licenses
 ENV I_MPI_ROOT=/opt/intel/oneapi/mpi/2021.3.0
+ENV FI_PROVIDER_PATH=/opt/intel/oneapi/mpi/2021.3.0//libfabric/lib/prov:/usr/lib64/libfabric
 ENV LD_LIBRARY_PATH=/opt/intel/oneapi/mpi/2021.3.0//libfabric/lib:/opt/intel/oneapi/mpi/2021.3.0/lib/release:/opt/intel/oneapi/mpi/2021.3.0/lib:/opt/intel/oneapi/mkl/2021.3.0/lib/intel64:/opt/intel/oneapi/compiler/2021.3.0/linux/lib:/opt/intel/oneapi/compiler/2021.3.0/linux/lib/x64:/opt/intel/oneapi/compiler/2021.3.0/linux/compiler/lib/intel64_lin
 ENV LIBRARY_PATH=/opt/intel/oneapi/mpi/2021.3.0//libfabric/lib:/opt/intel/oneapi/mpi/2021.3.0/lib/release:/opt/intel/oneapi/mpi/2021.3.0/lib:/opt/intel/oneapi/mkl/2021.3.0/lib/intel64:/opt/intel/oneapi/compiler/2021.3.0/linux/lib:/opt/intel/oneapi/compiler/2021.3.0/linux/lib/x64:/opt/intel/oneapi/compiler/2021.3.0/linux/compiler/lib/intel64_lin
 ENV MANPATH=/opt/intel/oneapi/mpi/2021.3.0/man:/opt/intel/oneapi/compiler/2021.3.0/documentation/en/man/common
